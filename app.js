@@ -4,8 +4,8 @@ const paypal = require('paypal-rest-sdk');
 
 paypal.configure({
     'mode': 'sandbox', //sandbox or live
-    'client_id': 'AT1omcE144dBNum-XXmGjEnAevoTBPVBL8s_o-uy1r40sUh2ANNIRj-0LVWfgRLLfKRSgvMo2iEx7e1N',
-    'client_secret': 'ELMcROgduTWVif1djq7TpKKL1XqwK4GcvvjVYC0QA_YIdmqAFZmp5GH0gnYLVq5M4P7JkqTdhs0rBWQp'
+    'client_id': '**********************************',
+    'client_secret': '***********************************'
   });
 
 
@@ -29,7 +29,7 @@ app.post('/pay', (req, res) =>{
         "transactions": [{
             "item_list": {
                 "items": [{
-                    "name": "Red Sox Hat",
+                    "name": "Yogendra payment",
                     "sku": "001",
                     "price": "25.00",
                     "currency": "USD",
